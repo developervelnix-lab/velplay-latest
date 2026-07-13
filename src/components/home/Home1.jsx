@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import FrontScrollableCard from './FrontScrollableCard';
-import RanaHeader from './boldvelocity/RanaHeader';
+import RanaHeader from './velplay365/RanaHeader';
 import TrendingSlot from './TrendingSlot';
 import GamesDisplay from './GameDisplay';
 import GameProvider from './GameProvider';

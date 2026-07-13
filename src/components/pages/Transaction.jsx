@@ -1,6 +1,6 @@
-import RanaHeader from "../home/boldvelocity/RanaHeader";
+import RanaHeader from "../home/velplay365/RanaHeader";
 import TransactionPage from "../sidebar-components/statements/TransactionPage";
-import '../../assets/css/ranamatch.css';
+import '../../assets/css/velplay365.css';
 
 function Transaction() {
   return (

@@ -1,4 +1,4 @@
-# boldvelocity Developer Documentation
+# velplay365 Developer Documentation
 
 This document is for the next developer who works on this frontend.
 
@@ -27,12 +27,12 @@ Main technologies:
 
 Important styling is split between:
 
-- `D:\winco-ishad\boldvelocity\src\assets\css\boldvelocity.css`
-- `D:\winco-ishad\boldvelocity\src\index.css`
+- `D:\winco-ishad\velplay365\src\assets\css\velplay365.css`
+- `D:\winco-ishad\velplay365\src\index.css`
 
 General rule:
 
-- `boldvelocity.css` contains most of the shared home/category/site-shell styling
+- `velplay365.css` contains most of the shared home/category/site-shell styling
 - `index.css` contains many page-specific redesigns and later responsive fixes
 
 ---
@@ -41,7 +41,7 @@ General rule:
 
 From:
 
-`D:\winco-ishad\boldvelocity`
+`D:\winco-ishad\velplay365`
 
 Commands:
    
@@ -68,7 +68,7 @@ npm run preview
 
 ### Entry
 
-- `D:\winco-ishad\boldvelocity\src\main.jsx`
+- `D:\winco-ishad\velplay365\src\main.jsx`
 
 This mounts:
 
@@ -77,15 +77,15 @@ This mounts:
 
 ### Main Router
 
-- `D:\winco-ishad\boldvelocity\src\App.jsx`
+- `D:\winco-ishad\velplay365\src\App.jsx`
 
 This is the master route map.
 
 ### App Providers
 
-- `D:\winco-ishad\boldvelocity\src\context\ThemeContext.jsx`
-- `D:\winco-ishad\boldvelocity\src\context\SiteContext.jsx`
-- `D:\winco-ishad\boldvelocity\src\context\GameContext.jsx`
+- `D:\winco-ishad\velplay365\src\context\ThemeContext.jsx`
+- `D:\winco-ishad\velplay365\src\context\SiteContext.jsx`
+- `D:\winco-ishad\velplay365\src\context\GameContext.jsx`
 
 What they do:
 
@@ -115,7 +115,7 @@ If login state looks wrong, these are the first things to inspect.
 
 ### Constants
 
-- `D:\winco-ishad\boldvelocity\src\utils\constants.js`
+- `D:\winco-ishad\velplay365\src\utils\constants.js`
 
 Main values:
 
@@ -131,7 +131,7 @@ If this project is moved to another backend, change these first.
 
 ### API Helper
 
-- `D:\winco-ishad\boldvelocity\src\utils\apiFetch.js`
+- `D:\winco-ishad\velplay365\src\utils\apiFetch.js`
 
 Use:
 
@@ -153,7 +153,7 @@ The shared site shell is the most important concept in this codebase.
 
 ### Shared Header / Mobile Footer Nav / Mobile Drawers
 
-- `D:\winco-ishad\boldvelocity\src\components\home\boldvelocity\RanaHeader.jsx`
+- `D:\winco-ishad\velplay365\src\components\home\velplay365\RanaHeader.jsx`
 
 This file controls:
 
@@ -172,7 +172,7 @@ If a page is missing the correct mobile nav/footer behavior, it usually means:
 
 ### Shared Home Wrapper
 
-- `D:\winco-ishad\boldvelocity\src\components\home\Home.jsx`
+- `D:\winco-ishad\velplay365\src\components\home\Home.jsx`
 
 This page composes:
 
@@ -184,7 +184,7 @@ This page composes:
 
 ### Shared Footer For Some Pages
 
-- `D:\winco-ishad\boldvelocity\src\components\home\boldvelocity\RanaFooter.jsx`
+- `D:\winco-ishad\velplay365\src\components\home\velplay365\RanaFooter.jsx`
 
 Used on home/category-style pages, not every utility page.
 
@@ -206,7 +206,7 @@ These wrapper classes matter:
 
 Rule of thumb:
 
-- if the page should behave like the redesigned boldvelocity site, wrap it with `rana-layout`
+- if the page should behave like the redesigned velplay365 site, wrap it with `rana-layout`
 - if mobile bottom nav is missing, check that first
 
 ---
@@ -216,7 +216,7 @@ Rule of thumb:
 ### Home
 
 - Route: `/`
-- Page: `D:\winco-ishad\boldvelocity\src\components\home\Home.jsx`
+- Page: `D:\winco-ishad\velplay365\src\components\home\Home.jsx`
 
 ### Wallet / Finance
 
@@ -266,7 +266,7 @@ Controlled by:
 
 ## 9. Protected Routes
 
-- `D:\winco-ishad\boldvelocity\src\components\auth\ProtectedRoute.jsx`
+- `D:\winco-ishad\velplay365\src\components\auth\ProtectedRoute.jsx`
 
 Protected routes require:
 
@@ -289,7 +289,7 @@ If a user is unexpectedly redirected to home:
 
 ### Home composition
 
-- `D:\winco-ishad\boldvelocity\src\components\home\boldvelocity\RanaMainContent.jsx`
+- `D:\winco-ishad\velplay365\src\components\home\velplay365\RanaMainContent.jsx`
 
 This controls:
 
@@ -304,7 +304,7 @@ This controls:
 
 ### Left sidebar
 
-- `D:\winco-ishad\boldvelocity\src\components\home\boldvelocity\RanaSidebarLeft.jsx`
+- `D:\winco-ishad\velplay365\src\components\home\velplay365\RanaSidebarLeft.jsx`
 
 This controls:
 
@@ -314,7 +314,7 @@ This controls:
 
 ### Right sidebar
 
-- `D:\winco-ishad\boldvelocity\src\components\home\boldvelocity\RanaSidebarRight.jsx`
+- `D:\winco-ishad\velplay365\src\components\home\velplay365\RanaSidebarRight.jsx`
 
 This controls:
 
@@ -369,7 +369,7 @@ If text is not changing from backend, it is probably hardcoded in one of these p
 
 Edit:
 
-- `D:\winco-ishad\boldvelocity\src\components\home\boldvelocity\RanaHeader.jsx`
+- `D:\winco-ishad\velplay365\src\components\home\velplay365\RanaHeader.jsx`
 
 Search:
 
@@ -403,7 +403,7 @@ If backend returns banners, they are shown first.
 
 Edit:
 
-- `D:\winco-ishad\boldvelocity\src\components\home\boldvelocity\RanaMainContent.jsx`
+- `D:\winco-ishad\velplay365\src\components\home\velplay365\RanaMainContent.jsx`
 
 Search:
 
@@ -415,7 +415,7 @@ Search:
 
 Edit:
 
-- `D:\winco-ishad\boldvelocity\src\components\home\boldvelocity\RanaSidebarLeft.jsx`
+- `D:\winco-ishad\velplay365\src\components\home\velplay365\RanaSidebarLeft.jsx`
 
 Note:
 
@@ -447,7 +447,7 @@ API used:
 
 Generic category layout:
 
-- `D:\winco-ishad\boldvelocity\src\components\pages\GameCategoryLayout.jsx`
+- `D:\winco-ishad\velplay365\src\components\pages\GameCategoryLayout.jsx`
 
 Each route can pass:
 
@@ -461,7 +461,7 @@ Each route can pass:
 
 Edit:
 
-- `D:\winco-ishad\boldvelocity\src\components\sidebar-components\Miscellaneous\InviteAndEarn.jsx`
+- `D:\winco-ishad\velplay365\src\components\sidebar-components\Miscellaneous\InviteAndEarn.jsx`
 
 Look for:
 
@@ -495,12 +495,12 @@ These pages are mostly content-driven React markup, not API-driven.
 
 - page wrapper: `src\components\pages\BonusPage.jsx`
 - main content: `src\components\sidebar-components\Miscellaneous\Bonus.jsx`
-- styles: `src\assets\css\boldvelocity.css` under `.bonus-v3*`
+- styles: `src\assets\css\velplay365.css` under `.bonus-v3*`
 
 ### Active Bonus
 
 - page wrapper: `src\components\pages\ActiveBonusPage.jsx`
-- styles in `boldvelocity.css` under `.active-bonus*`
+- styles in `velplay365.css` under `.active-bonus*`
 
 ### Invite & Earn
 
@@ -551,7 +551,7 @@ Note:
 
 Main file:
 
-- `D:\winco-ishad\boldvelocity\src\components\pages\CasinoPage.jsx`
+- `D:\winco-ishad\velplay365\src\components\pages\CasinoPage.jsx`
 
 Important:
 
@@ -573,7 +573,7 @@ Category layout:
 
 Shared category styling:
 
-- `boldvelocity.css`
+- `velplay365.css`
 
 Game launch flow often uses:
 
@@ -595,8 +595,8 @@ If a category shows no games:
 
 ### Main style files
 
-- `D:\winco-ishad\boldvelocity\src\assets\css\boldvelocity.css`
-- `D:\winco-ishad\boldvelocity\src\index.css`
+- `D:\winco-ishad\velplay365\src\assets\css\velplay365.css`
+- `D:\winco-ishad\velplay365\src\index.css`
 
 ### Good editing strategy
 
@@ -643,7 +643,7 @@ If mobile nav/footer is missing completely:
 
 Font constants:
 
-- `D:\winco-ishad\boldvelocity\src\constants\theme.js`
+- `D:\winco-ishad\velplay365\src\constants\theme.js`
 
 Current fonts:
 
@@ -664,7 +664,7 @@ Do not assume changing `theme.js` updates the whole site.
    - newer `rana-layout` redesign
    - custom page-level CSS
 
-2. Some pages are styled in `boldvelocity.css`, some in `index.css`, some inline.
+2. Some pages are styled in `velplay365.css`, some in `index.css`, some inline.
 
 3. A few files still contain old text encoding artifacts in source comments or strings.
 
@@ -683,7 +683,7 @@ When changing a page:
 2. Open the page wrapper component
 3. Find the content component
 4. Search the page namespace in:
-   - `boldvelocity.css`
+   - `velplay365.css`
    - `index.css`
 5. Keep changes scoped to that page namespace
 
@@ -717,15 +717,15 @@ When changing content:
 ### Shared site shell
 
 - `src\components\home\Home.jsx`
-- `src\components\home\boldvelocity\RanaHeader.jsx`
-- `src\components\home\boldvelocity\RanaMainContent.jsx`
-- `src\components\home\boldvelocity\RanaSidebarLeft.jsx`
-- `src\components\home\boldvelocity\RanaSidebarRight.jsx`
-- `src\components\home\boldvelocity\RanaFooter.jsx`
+- `src\components\home\velplay365\RanaHeader.jsx`
+- `src\components\home\velplay365\RanaMainContent.jsx`
+- `src\components\home\velplay365\RanaSidebarLeft.jsx`
+- `src\components\home\velplay365\RanaSidebarRight.jsx`
+- `src\components\home\velplay365\RanaFooter.jsx`
 
 ### Main style files
 
-- `src\assets\css\boldvelocity.css`
+- `src\assets\css\velplay365.css`
 - `src\index.css`
 
 ---
@@ -736,9 +736,9 @@ Primary places:
 
 1. `src\utils\constants.js`
 2. `src\context\SiteContext.jsx`
-3. `src\components\home\boldvelocity\RanaHeader.jsx`
-4. `src\components\home\boldvelocity\RanaMainContent.jsx`
-5. `src\assets\css\boldvelocity.css`
+3. `src\components\home\velplay365\RanaHeader.jsx`
+4. `src\components\home\velplay365\RanaMainContent.jsx`
+5. `src\assets\css\velplay365.css`
 6. `src\index.css`
 
 Also review:
@@ -894,7 +894,7 @@ If the user asks:
 
 ### File
 
-- `D:\winco-ishad\boldvelocity\src\components\home\boldvelocity\RanaHeader.jsx`
+- `D:\winco-ishad\velplay365\src\components\home\velplay365\RanaHeader.jsx`
 
 ### What it controls
 
@@ -960,7 +960,7 @@ Check:
 
 1. `mobilePanel` state in `RanaHeader.jsx`
 2. `mobile-home-menu-open` body class behavior
-3. CSS under `.mobile-home-dock`, `.mobile-header-actions`, `.mobile-panel-*` in `boldvelocity.css`
+3. CSS under `.mobile-home-dock`, `.mobile-header-actions`, `.mobile-panel-*` in `velplay365.css`
 
 ---
 
@@ -968,9 +968,9 @@ Check:
 
 ### Files
 
-- `D:\winco-ishad\boldvelocity\src\components\common\AuthModalHost.jsx`
-- `D:\winco-ishad\boldvelocity\src\components\auth\Login.jsx`
-- `D:\winco-ishad\boldvelocity\src\components\auth\Register.jsx`
+- `D:\winco-ishad\velplay365\src\components\common\AuthModalHost.jsx`
+- `D:\winco-ishad\velplay365\src\components\auth\Login.jsx`
+- `D:\winco-ishad\velplay365\src\components\auth\Register.jsx`
 
 ### How it works
 
@@ -993,7 +993,7 @@ If a page needs login modal behavior, it should:
 
 If login/register popup styling looks wrong:
 
-- search `auth-modal`, `auth-`, `Login`, `Register` in `boldvelocity.css`
+- search `auth-modal`, `auth-`, `Login`, `Register` in `velplay365.css`
 
 ---
 
@@ -1005,7 +1005,7 @@ There are at least two game-launch flows:
 
 Main file:
 
-- `D:\winco-ishad\boldvelocity\src\components\home\GameSection.jsx`
+- `D:\winco-ishad\velplay365\src\components\home\GameSection.jsx`
 
 Important flow:
 
@@ -1021,7 +1021,7 @@ Important flow:
 
 Main file:
 
-- `D:\winco-ishad\boldvelocity\src\components\pages\CasinoPage.jsx`
+- `D:\winco-ishad\velplay365\src\components\pages\CasinoPage.jsx`
 
 This page has its own popup and loading behavior.
 
@@ -1078,7 +1078,7 @@ Current defaults are mostly empty, so backend banners are important.
 
 ### File
 
-- `D:\winco-ishad\boldvelocity\src\context\GameContext.jsx`
+- `D:\winco-ishad\velplay365\src\context\GameContext.jsx`
 
 ### Returned buckets
 
@@ -1205,22 +1205,22 @@ Use this as a search map.
 
 ### Home / shell / shared site
 
-- file: `boldvelocity.css`
+- file: `velplay365.css`
 - search: `.rana-layout`, `.top-bar`, `.header-*`, `.mobile-*`, `.side-*`, `.promo-*`
 
 ### Category pages
 
-- file: `boldvelocity.css`
+- file: `velplay365.css`
 - search: `.category-*`
 
 ### Bonus pages
 
-- file: `boldvelocity.css`
+- file: `velplay365.css`
 - search: `.bonus-v3*`
 
 ### Active bonus tracker
 
-- file: `boldvelocity.css`
+- file: `velplay365.css`
 - search: `.active-bonus*`
 
 ### Finance pages
@@ -1304,7 +1304,7 @@ Likely causes:
 Search both:
 
 - `index.css`
-- `boldvelocity.css`
+- `velplay365.css`
 
 ---
 

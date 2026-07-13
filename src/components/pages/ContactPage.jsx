@@ -1,8 +1,8 @@
 import React from 'react'
 import ContactUs from '../sidebar-components/contact/ContactUs'
-import RanaHeader from '../home/boldvelocity/RanaHeader'
+import RanaHeader from '../home/velplay365/RanaHeader'
 import { useColors } from '../../hooks/useColors';
-import '../../assets/css/ranamatch.css';
+import '../../assets/css/velplay365.css';
 
 function ContactPage() {
   const COLORS = useColors();

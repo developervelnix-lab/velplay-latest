@@ -2,9 +2,9 @@ import React from 'react'
 import { useSearchParams } from 'react-router-dom'
 import ContactUs from '../sidebar-components/contact/ContactUs'
 import SupportHistory from '../sidebar-components/contact/SupportHistory'
-import RanaHeader from '../home/boldvelocity/RanaHeader'
+import RanaHeader from '../home/velplay365/RanaHeader'
 import AuthModalHost from '../common/AuthModalHost'
-import '../../assets/css/ranamatch.css'
+import '../../assets/css/velplay365.css'
 
 function SupportPage() {
   const [searchParams, setSearchParams] = useSearchParams();

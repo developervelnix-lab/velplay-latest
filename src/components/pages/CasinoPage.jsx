@@ -8,9 +8,9 @@ import { useNavigate } from "react-router-dom";
 import { apiGet, apiPost } from "@/utils/apiFetch";
 import { FaPlay, FaSearch, FaTimes } from "react-icons/fa";
 
-import RanaHeader from "../home/boldvelocity/RanaHeader";
+import RanaHeader from "../home/velplay365/RanaHeader";
 import AuthModalHost from "../common/AuthModalHost";
-import '../../assets/css/ranamatch.css';
+import '../../assets/css/velplay365.css';
 
 const GAME_TYPES = [
   { id: 'all', label: 'All Games', icon: '🎲' },
@@ -530,7 +530,7 @@ const CasinoPage = () => {
             margin-bottom:12px;
           }
           .sec-row .search-box{
-            display:none;
+            display:block;
           }
           .sec-title{
             font-size:11px;

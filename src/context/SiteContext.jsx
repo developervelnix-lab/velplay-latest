@@ -10,12 +10,12 @@ export const SiteProvider = ({ children }) => {
 
   // 2. Build initial state from defaults + local session + cached data
   const INITIAL_ACCOUNT_INFO = {
-    service_site_name: "boldvelocity",
+    service_site_name: "velplay365",
     service_site_logo: "",
     service_tagline: "PLAY · WIN · REPEAT",
-    service_marquee: "Welcome to boldvelocity! Experience world-class betting and gaming. Sign up now to get exclusive bonuses and daily rewards. Minimum deposit ₹100. Fast 24/7 withdrawals.",
-    service_app_download_url: "https://boldvelocity.com/boldvelocity.apk",
-    service_support_url: "https://t.me/boldvelocity_support",
+    service_marquee: "Welcome to velplay365! Experience world-class betting and gaming. Sign up now to get exclusive bonuses and daily rewards. Minimum deposit ₹100. Fast 24/7 withdrawals.",
+    service_app_download_url: "https://velplay365.com/velplay365.apk",
+    service_support_url: "https://t.me/velplay365_support",
     account_id: initialUserId || "",
     account_username: initialUserId === "guest" ? "Guest" : (initialUserId ? "User" : ""),
     account_balance: "0.00",

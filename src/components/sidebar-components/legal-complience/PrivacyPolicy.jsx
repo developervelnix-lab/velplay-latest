@@ -1,7 +1,7 @@
 import React from "react";
 import { FaCookieBite, FaDatabase, FaLock, FaShieldAlt, FaUserCheck } from "react-icons/fa";
-import RanaHeader from "@/components/home/boldvelocity/RanaHeader";
-import "@/assets/css/ranamatch.css";
+import RanaHeader from "@/components/home/velplay365/RanaHeader";
+import "@/assets/css/velplay365.css";
 
 const PrivacyPolicy = () => {
   const sections = [

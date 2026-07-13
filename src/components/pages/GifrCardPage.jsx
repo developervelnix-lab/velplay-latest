@@ -1,8 +1,8 @@
 import React from 'react'
-import RanaHeader from '../home/boldvelocity/RanaHeader'
+import RanaHeader from '../home/velplay365/RanaHeader'
 import GiftCardRedemption from '../sidebar-components/Miscellaneous/GiftCard'
 import { useColors } from '../../hooks/useColors';
-import '../../assets/css/ranamatch.css';
+import '../../assets/css/velplay365.css';
 
 function GifrCardPage() {
   const COLORS = useColors();

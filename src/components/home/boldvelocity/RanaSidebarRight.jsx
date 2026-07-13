@@ -40,7 +40,7 @@ const RanaSidebarRight = () => {
     }
 
     if (platform === 'android') {
-      window.open(accountInfo?.service_app_download_url || '/boldvelocity.apk', '_blank', 'noopener,noreferrer');
+      window.open(accountInfo?.service_app_download_url || '/velplay365.apk', '_blank', 'noopener,noreferrer');
       return;
     }
 
@@ -214,24 +214,24 @@ const RanaSidebarRight = () => {
             <button className="app-btn" onClick={handleGetApp} style={{ width: '100%' }}>
               <span>🤖</span>
               <div className="app-btn-text">
-                <span className="sub" style={{ color: '#e5e7eb' }}>Download for</span>
-                <span className="name" style={{ color: '#ffffff' }}>Android</span>
+                <span className="sub" style={{ color: '#e5e7eb' }}>Download </span>
+                <span className="name" style={{ color: '#ffffff' }}>apk</span>
               </div>
             </button>
           ) : platform === 'ios' ? (
             <button className="app-btn" onClick={handleGetApp} style={{ width: '100%' }}>
               <span>🍏</span>
               <div className="app-btn-text">
-                <span className="sub" style={{ color: '#e5e7eb' }}>Download for</span>
-                <span className="name" style={{ color: '#ffffff' }}>iOS</span>
+                <span className="sub" style={{ color: '#e5e7eb' }}>Download </span>
+                <span className="name" style={{ color: '#ffffff' }}>apk</span>
               </div>
             </button>
           ) : (
             <button className="app-btn" onClick={handleGetApp} style={{ width: '100%' }}>
               <span>💻</span>
               <div className="app-btn-text">
-                <span className="sub" style={{ color: '#e5e7eb' }}>Download for</span>
-                <span className="name" style={{ color: '#ffffff' }}>Desktop</span>
+                <span className="sub" style={{ color: '#e5e7eb' }}>Download </span>
+                <span className="name" style={{ color: '#ffffff' }}>apk</span>
               </div>
             </button>
           )}

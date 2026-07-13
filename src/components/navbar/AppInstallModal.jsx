@@ -25,7 +25,7 @@ const AppInstallModal = ({ isOpen, onClose, isInstallable, installApp, isInstall
 
   const handleInstall = () => {
     if (currentPlatform === 'android' && !isInstalled) {
-      window.location.href = apkUrl || "/boldvelocity.apk";
+      window.location.href = apkUrl || "/velplay365.apk";
     } else if (isInstallable) {
       installApp();
     } else {

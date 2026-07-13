@@ -1,6 +1,6 @@
 import RulesAndRegulation from '../sidebar-components/legal-complience/RulesAndRegulation'
-import RanaHeader from '../home/boldvelocity/RanaHeader'
-import '../../assets/css/ranamatch.css';
+import RanaHeader from '../home/velplay365/RanaHeader'
+import '../../assets/css/velplay365.css';
 
 function RulesAndRegulationPage() {
   return (

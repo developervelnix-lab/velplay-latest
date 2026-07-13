@@ -1,7 +1,7 @@
 import React from 'react'
-import RanaHeader from '../home/boldvelocity/RanaHeader'
+import RanaHeader from '../home/velplay365/RanaHeader'
 import Withdraw from '../navbar/Withdraw'
-import '../../assets/css/ranamatch.css'
+import '../../assets/css/velplay365.css'
 
 function WithdrawPage() {
   return (

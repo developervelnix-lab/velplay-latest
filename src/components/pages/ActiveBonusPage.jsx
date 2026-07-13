@@ -3,8 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import { FaArrowLeft, FaBolt, FaCheckCircle, FaClock, FaExclamationCircle, FaGift, FaInfoCircle, FaShieldAlt, FaTimesCircle, FaTrophy, FaWallet } from 'react-icons/fa';
 import { API_URL } from '../../utils/constants';
 import { useSite } from '../../context/SiteContext';
-import RanaHeader from '../home/boldvelocity/RanaHeader';
-import '../../assets/css/ranamatch.css';
+import RanaHeader from '../home/velplay365/RanaHeader';
+import '../../assets/css/velplay365.css';
 
 const money = (value) => `\u20b9${Number(value || 0).toLocaleString('en-IN')}`;
 

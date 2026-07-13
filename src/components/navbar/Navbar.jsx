@@ -860,7 +860,7 @@ function Navbar() {
                       } else if (isInstallable) {
                         installApp();
                       } else if (currentDevice === 'android') {
-                        window.open(accountInfo?.service_apk_url || "/boldvelocity.apk", "_blank");
+                        window.open(accountInfo?.service_apk_url || "/velplay365.apk", "_blank");
                       } else {
                         // Fallback: trigger whatever browser-native thing might happen
                         window.open(window.location.origin, '_blank');

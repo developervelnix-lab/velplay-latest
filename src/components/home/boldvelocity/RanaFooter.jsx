@@ -29,7 +29,7 @@ const RanaFooter = () => {
     }
 
     if (platform === 'android') {
-      window.open(accountInfo?.service_app_download_url || '/boldvelocity.apk', '_blank', 'noopener,noreferrer');
+      window.open(accountInfo?.service_app_download_url || '/velplay365.apk', '_blank', 'noopener,noreferrer');
       return;
     }
 

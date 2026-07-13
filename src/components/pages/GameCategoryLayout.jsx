@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
-import RanaHeader from "../home/boldvelocity/RanaHeader";
-import RanaFooter from "../home/boldvelocity/RanaFooter";
+import RanaHeader from "../home/velplay365/RanaHeader";
+import RanaFooter from "../home/velplay365/RanaFooter";
 import GameSection from "../home/GameSection";
-import "../../assets/css/ranamatch.css";
+import "../../assets/css/velplay365.css";
 
 function GameCategoryLayout({
   title,

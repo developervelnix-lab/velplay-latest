@@ -1,7 +1,7 @@
 import React from 'react'
-import RanaHeader from '../home/boldvelocity/RanaHeader'
+import RanaHeader from '../home/velplay365/RanaHeader'
 import PasswordChangeForm from '../sidebar-components/account-actions/ChangePassword'
-import '../../assets/css/ranamatch.css';
+import '../../assets/css/velplay365.css';
 
 function ChangePasswordPage() {
   return (

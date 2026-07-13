@@ -1,6 +1,6 @@
 import ResponsibleGambling from '../sidebar-components/legal-complience/ResponsibleGambling'
-import RanaHeader from '../home/boldvelocity/RanaHeader'
-import '../../assets/css/ranamatch.css';
+import RanaHeader from '../home/velplay365/RanaHeader'
+import '../../assets/css/velplay365.css';
 
 function ResponsibleGamblingPage() {
   return (

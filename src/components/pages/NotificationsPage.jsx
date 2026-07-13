@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import RanaHeader from '../home/boldvelocity/RanaHeader';
-import '../../assets/css/ranamatch.css';
+import RanaHeader from '../home/velplay365/RanaHeader';
+import '../../assets/css/velplay365.css';
 import { useColors } from '../../hooks/useColors';
 import { useSite } from '../../context/SiteContext';
 import { motion, AnimatePresence } from 'framer-motion';

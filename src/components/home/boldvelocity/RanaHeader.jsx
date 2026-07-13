@@ -55,7 +55,7 @@ const RanaHeader = () => {
     }
 
     if (platform === 'android') {
-      window.open(accountInfo?.service_app_download_url || '/boldvelocity.apk', '_blank', 'noopener,noreferrer');
+      window.open(accountInfo?.service_app_download_url || '/velplay365.apk', '_blank', 'noopener,noreferrer');
       return;
     }
 
@@ -117,11 +117,53 @@ const RanaHeader = () => {
     event.preventDefault();
     navigate(path);
   };
+  const scrollToHomeSection = (hash) => {
+    const section = document.querySelector(hash);
+    if (!section) return;
+
+    const contentScroller = section.closest(".main-content");
+    if (contentScroller && contentScroller.scrollHeight > contentScroller.clientHeight) {
+      const sectionTop = section.getBoundingClientRect().top - contentScroller.getBoundingClientRect().top + contentScroller.scrollTop;
+      contentScroller.scrollTo({
+        top: Math.max(sectionTop - 8, 0),
+        behavior: "smooth",
+      });
+      return;
+    }
+
+    const headerHeight = Number.parseFloat(
+      window.getComputedStyle(document.documentElement).getPropertyValue("--rana-header-height")
+    ) || document.querySelector(".rana-header-shell")?.getBoundingClientRect().height || 132;
+
+    window.scrollTo({
+      top: Math.max(section.getBoundingClientRect().top + window.scrollY - headerHeight - 8, 0),
+      behavior: "smooth",
+    });
+  };
+  const scrollHomeToTop = () => {
+    const contentScroller = document.querySelector(".main-content");
+    if (contentScroller && contentScroller.scrollHeight > contentScroller.clientHeight) {
+      contentScroller.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+  const goHomeTop = (event) => {
+    event.preventDefault();
+    navigate("/");
+    window.setTimeout(scrollHomeToTop, 80);
+  };
   const goHomeSection = (event, hash) => {
     event.preventDefault();
     navigate(`/${hash}`);
     window.setTimeout(() => {
-      document.querySelector(hash)?.scrollIntoView({ behavior: "smooth", block: "start" });
+      scrollToHomeSection(hash);
     }, 80);
   };
   const isMobileViewport = () => window.matchMedia?.("(max-width: 820px)").matches;
@@ -239,11 +281,11 @@ const RanaHeader = () => {
             />
           </Link>
           <nav>
-            <Link to="/" className={navClass(isHomeActive)}>🏠 Home</Link>
+            <Link to="/" className={navClass(isHomeActive)} onClick={goHomeTop}>🏠 Home</Link>
             <Link to="/#live" className={navClass(isHashActive("#live"))} onClick={(e) => goHomeSection(e, "#live")}>⚽ Sports</Link>
             <Link to="/casino" className={navClass(isPathActive("/casino"))}>🎰 Casino</Link>
-            <Link to="/#slots" className={navClass(isHashActive("#slots"))}>🎰 Slots</Link>
-            <Link to="/#fantasy-games" className={navClass(isHashActive("#fantasy-games"))}>🎮 Fantasy Games</Link>
+            <Link to="/#slots" className={navClass(isHashActive("#slots"))} onClick={(e) => goHomeSection(e, "#slots")}>🎰 Slots</Link>
+            <Link to="/#fantasy-games" className={navClass(isHashActive("#fantasy-games"))} onClick={(e) => goHomeSection(e, "#fantasy-games")}>🎮 Fantasy Games</Link>
             <Link to="/promotion" className={navClass(isPathActive("/promotion"))}>💰 Promotions</Link>
           </nav>
           <div className="mobile-header-actions">
@@ -597,6 +639,7 @@ const RanaHeader = () => {
           <Link
             key={item.label}
             to={item.path}
+            onClick={item.isHome ? goHomeTop : item.path === "/#live" ? (e) => goHomeSection(e, "#live") : undefined}
             className={`${isBottomActive(item.path) ? "active" : ""}${item.isHome ? " is-home" : ""}`.trim()}
           >
             {item.icon}

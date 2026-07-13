@@ -1,12 +1,12 @@
 "use client"
 
 import { useEffect } from "react"
-import RanaHeader from "./boldvelocity/RanaHeader"
-import RanaSidebarLeft from "./boldvelocity/RanaSidebarLeft"
-import RanaSidebarRight from "./boldvelocity/RanaSidebarRight"
-import RanaMainContent from "./boldvelocity/RanaMainContent"
+import RanaHeader from "./velplay365/RanaHeader"
+import RanaSidebarLeft from "./velplay365/RanaSidebarLeft"
+import RanaSidebarRight from "./velplay365/RanaSidebarRight"
+import RanaMainContent from "./velplay365/RanaMainContent"
 import AuthModalHost from "../common/AuthModalHost"
-import '../../assets/css/ranamatch.css'
+import '../../assets/css/velplay365.css'
 
 function Home() {
   useEffect(() => {
