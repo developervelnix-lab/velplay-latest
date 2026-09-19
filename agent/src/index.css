@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&family=Sora:wght@600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-color: #1d4ed8;
+  --brand-rgb: 29, 78, 216;
+  --brand-color-light: #60a5fa;
+  --brand-color-dark: #1e3a8a;
+  --brand-gradient: linear-gradient(135deg, #1d4ed8 0%, #22d3ee 100%);
+  --accent-glow: rgba(29, 78, 216, 0.12);
+  --cyan: #22d3ee;
+  --cyan-rgb: 34, 211, 238;
+  --red: #ef4444;
+  --bg: #0b0f19; /* Ultra dark luxury backdrop */
+  --secondary-bg: #141c2e;
+  --bg2: #141c2e;
+  --bg3: #1e293b;
+  --bg4: #334155;
+  --border: rgba(29, 78, 216, 0.14);
+  --border2: rgba(255, 255, 255, 0.08);
+  --text: #f8fafc;
+  --muted: #94a3b8;
+  --font-display: 'Sora', sans-serif;
+  --font-ui: 'Inter', sans-serif;
+  --font-head: 'Space Grotesk', sans-serif;
+
+  --brand: var(--brand-color);
+  --brand-light: var(--brand-color-light);
+  --brand-dark: var(--brand-color-dark);
+  --secondaryBg: var(--secondary-bg);
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html, body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-ui);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  max-width: 100%;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
+
+/* GPU Hardware acceleration to fix scroll lag */
+header, section, .glass-panel {
+  will-change: transform, opacity;
+  transform: translate3d(0, 0, 0);
+}
+
+/* Custom premium scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0b0f19;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Micro-animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.5; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.04); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 4s ease-in-out infinite;
+}
+
+/* Custom glassmorphic utilities matching website */
+.glass-panel {
+  background: linear-gradient(180deg, rgba(20, 28, 46, 0.95), rgba(11, 15, 25, 0.98));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 18px 46px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.cyan-kicker {
+  background: linear-gradient(135deg, #1d4ed8 0%, #22d3ee 100%);
+  box-shadow: 0 10px 25px rgba(29, 78, 216, 0.25);
+}

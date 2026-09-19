@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;700;800&family=Sora:wght@600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-color: #1d4ed8;
+  --brand-rgb: 29, 78, 216;
+  --brand-color-light: #3b82f6;
+  --brand-color-dark: #1e3a8a;
+  --brand-gradient: linear-gradient(135deg, #1d4ed8 0%, #1e3a8a 100%);
+  --accent-glow: rgba(29, 78, 216, 0.08);
+  --yellow: #06b6d4; /* Pure Cyan */
+  --red: #ef4444;
+  --bg: #f8fafc; /* Premium off-white */
+  --secondary-bg: #ffffff;
+  --bg2: #f1f5f9;
+  --bg3: #e2e8f0;
+  --bg4: #cbd5e1;
+  --border: rgba(29, 78, 216, 0.08);
+  --border2: rgba(0, 0, 0, 0.05);
+  --text: #0f172a; /* Slate 900 */
+  --muted: #64748b; /* Slate 500 */
+  --font-display: 'Sora', sans-serif;
+  --font-ui: 'Inter', sans-serif;
+  --font-head: 'Space Grotesk', sans-serif;
+
+  --brand: var(--brand-color);
+  --brand-light: var(--brand-color-light);
+  --brand-dark: var(--brand-color-dark);
+  --secondaryBg: var(--secondary-bg);
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-ui);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
+
+/* Custom premium scrollbar styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Micro-animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 0.9; transform: scale(1.05); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 4s ease-in-out infinite;
+}
